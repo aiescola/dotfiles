@@ -1,0 +1,12 @@
+#!bin/sh
+
+GITIGNORE=$HOME/.gitignore
+touch $GITIGNORE
+
+git config --global core.excludesfile $GITIGNORE
+
+echo "#Default ignored files, place here your own folders/files
+echo "ignored/" >> $GITIGNORE
+echo "field-notes*" >> $GITIGNORE
+echo "prueba-ignore*" >> $GITIGNORE
+
