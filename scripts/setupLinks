@@ -1,0 +1,15 @@
+#!bin/sh
+
+base_dir=$(readlink -f "$0")
+dotfile_dir=$(dirname $(dirname $base_dir))
+config_dir=$dotfile_dir/config
+git_dir=$dotfile_dir/git
+
+config_dir=$HOME/.config
+
+ln -sv "${dotfile_dir}/.aliases" $HOME
+ln -svf "${dotfile_dir}/.zshrc" $HOME
+ln -sv "${config_dir}/redshift.conf" $config_dir
+ln -sv "${config_dir}/regolith/i3" $config_dir/regolith
+
+ln -sv "${git_dir}/.gitignore" $HOME
