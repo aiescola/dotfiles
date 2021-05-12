@@ -7,19 +7,23 @@ sudo apt install snapd -y
 wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
 sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/ 1>/dev/null
 sudo apt-get install -y software-properties-common 1>/dev/null
-sudo apt-get install -y adoptopenjdk-8-openj9 
+sudo apt-get install -y adoptopenjdk-8-openj9
 
-# Terminal radio
-sudo apt-get install mpg123
+# Terminal utils
+sudo apt install mpg123
+sudo apt install tree
+sudo apt install ncdu
+
 
 # Visual Studio Code
 snap install code --classic
 
 # Android Studio
-snap install android-studio --classic 
+#snap install android-studio --classic
 
 # Go
-snap install go --classic
+#snap install go --classic
+
 
 # Zsh
 sudo apt install zsh -y

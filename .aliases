@@ -1,7 +1,19 @@
 alias ws="cd $HOME/workspace"
 alias wsa="cd $HOME/workspace/android"
-alias editzshrc="nano $HOME/.zshrc"
-alias editppas="sudo nano /etc/apt/sources.list"
+alias ezshrc="nano $HOME/.zshrc"
+alias eppa="sudo nano /etc/apt/sources.list"
+
+clearAndroidBinaries() {
+	find $HOME/workspace/android -type d -name build -exec rm -rf {} \;
+	find $HOME/workspace/android -type f -name "*.apk" -delete
+}
+
+zipFolder() {
+	zip -r $1 $1
+	rm -rf $1
+}
+
+alias clearTrash="rm -rf $HOME/.local/share/Trash"
 
 alias tarinfo='tar -ztvf $1'
 
@@ -21,4 +33,3 @@ alias mpgbbc2="mpg123 -@ http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_
 alias mpgbbc3="mpg123 -@ http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p"
 alias mpgbbc4="mpg123 -@ http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p"
 alias mpgrockblues="mpg123 -@ http://94.23.201.38:8040"
-

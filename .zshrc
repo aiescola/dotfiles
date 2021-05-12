@@ -1,24 +1,16 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-ADB_HOME="/home/aitor/Android/Sdk/platform-tools"
-JAVA_HOME="/usr/java/jdk8u252-b09/bin"
 
-export PATH=$PATH:$ADB_HOME:$JAVA_HOME
+ADB_HOME="$HOME/Android/Sdk/platform-tools"
+JAVA_HOME="/home/aitor/programas/android-studio/jre"
+GOPATH="$HOME/go"
+NODE_HOME="$HOME/.node/bin"
+LOCAL_BIN="$HOME/.local/bin"
+
+export PATH=$PATH:$ADB_HOME:$JAVA_HOME:$NODE_HOME:$LOCAL_BIN
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/aitor/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+ZSH_THEME="amuse-aitor"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -70,8 +62,6 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git python adb)
 
 source $ZSH/oh-my-zsh.sh
