@@ -1,0 +1,5 @@
+#!bin/sh
+
+rm $HOME/.zshrc
+stow base
+stow linux

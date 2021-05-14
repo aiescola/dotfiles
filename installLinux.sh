@@ -10,10 +10,10 @@ sudo apt-get install -y software-properties-common 1>/dev/null
 sudo apt-get install -y adoptopenjdk-8-openj9
 
 # Terminal utils
-sudo apt install mpg123
-sudo apt install tree
-sudo apt install ncdu
-
+sudo apt-get install mpg123
+sudo apt-get install tree
+sudo apt-get install ncdu
+sudo apt-get install stow
 
 # Visual Studio Code
 snap install code --classic
@@ -30,3 +30,10 @@ sudo apt install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 chsh -s $(which zsh)
+
+
+## Add config ##
+
+sh ./scripts/setupLinuxLinks
+
+sh ./scripts/setupGit

@@ -1,6 +1,6 @@
 
 ADB_HOME="$HOME/Android/Sdk/platform-tools"
-JAVA_HOME="/home/aitor/programas/android-studio/jre"
+#JAVA_HOME="$HOME/programas/android-studio/jre"
 GOPATH="$HOME/go"
 NODE_HOME="$HOME/.node/bin"
 LOCAL_BIN="$HOME/.local/bin"
@@ -8,7 +8,7 @@ LOCAL_BIN="$HOME/.local/bin"
 export PATH=$PATH:$ADB_HOME:$JAVA_HOME:$NODE_HOME:$LOCAL_BIN
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/aitor/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="amuse-aitor"
 
