@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/bash
 
 sudo apt update 1>/dev/null
 sudo apt install snapd -y
@@ -24,6 +24,7 @@ snap install code --classic
 # Go
 #snap install go --classic
 
+# TODO: jenv
 
 # Zsh
 sudo apt install zsh -y
@@ -32,8 +33,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 chsh -s $(which zsh)
 
 
-## Add config ##
-
-sh ./scripts/setupLinuxLinks
+## CONFIG
 
 sh ./scripts/setupGit
+sh ./scripts/setupLinuxLinks

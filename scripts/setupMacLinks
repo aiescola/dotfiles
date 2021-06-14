@@ -2,4 +2,4 @@
 
 rm $HOME/.zshrc
 stow base
-stow linux
+stow macos

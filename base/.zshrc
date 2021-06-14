@@ -1,16 +1,17 @@
 
 ADB_HOME="$HOME/Android/Sdk/platform-tools"
-#JAVA_HOME="$HOME/programas/android-studio/jre"
 GOPATH="$HOME/go"
-NODE_HOME="$HOME/.node/bin"
+NVM_DIR="$HOME/.nvm"
 LOCAL_BIN="$HOME/.local/bin"
 
-export PATH=$PATH:$ADB_HOME:$JAVA_HOME:$NODE_HOME:$LOCAL_BIN
+export PATH=$PATH:$ADB_HOME:$LOCAL_BIN
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="amuse-aitor"
+
+eval "$(jenv init -)"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -92,4 +93,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.aliases
+source ~/.bash/aliases
+source ~/.bash/platformConfig

@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/bash
 
 git config --global core.excludesfile $HOME/.gitignore
 git config --global user.email "basch92@gmail.com"
