@@ -34,4 +34,3 @@ alias mpgbbc1="mpg123 -@ http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_
 alias mpgbbc2="mpg123 -@ http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p"
 alias mpgbbc3="mpg123 -@ http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio3_mf_p"
 alias mpgbbc4="mpg123 -@ http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio4fm_mf_p"
-alias mpgrockblues="mpg123 -@ http://94.23.201.38:8040"

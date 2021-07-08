@@ -35,5 +35,5 @@ chsh -s $(which zsh)
 
 ## CONFIG
 
-sh ./scripts/setupGit
-sh ./scripts/setupLinuxLinks
+sh ./scripts/setupGit 
+sh ./scripts/setupLinks linux

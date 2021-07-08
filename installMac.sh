@@ -34,10 +34,16 @@ brew install --cask visual-studio-code
 # FORK
 brew install --cask fork
 
+# Vagrant
+brew install vagrant
+
+# VirtualBox
+brew install virtualbox
+
 # OH MY ZSH
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 # CONFIG
 
 sh ./scripts/setupGitWork
-sh ./scripts/setupMacLinks
+sh ./scripts/setupLinks macos
