@@ -35,5 +35,9 @@ chsh -s $(which zsh)
 
 ## CONFIG
 
+export _git_email=basch92@gmail.com
+export _git_user=aiescola
+export _platform_folder=linux
+
 sh ./scripts/setupGit 
-sh ./scripts/setupLinks linux
+sh ./scripts/setupLinks

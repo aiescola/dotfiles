@@ -45,5 +45,9 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 # CONFIG
 
-sh ./scripts/setupGitWork
-sh ./scripts/setupLinks macos
+export _git_email=aitor.escolar@devo.com
+export _git_user=aitor.escolar
+export _platform_folder=macos
+
+sh ./scripts/setupGit
+sh ./scripts/setupLinks

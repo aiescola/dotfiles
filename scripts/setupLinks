@@ -2,4 +2,4 @@
 
 rm $HOME/.zshrc
 stow base
-stow ${1}
+stow ${_platform_folder}
