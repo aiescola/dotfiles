@@ -531,8 +531,6 @@ exec --no-startup-id $i3-wm.program.3
 ###############################################################################
 
 for_window [class="^jetbrains-.+"][window_type=dialog] focus
-for_window [title="Notificación de Microsoft Teams"] floating enable
-for_window [title="Microsoft Teams Notification"] floating enable
 
 assign [class="Navigator"] 1
 assign [class="Firefox"] 1
