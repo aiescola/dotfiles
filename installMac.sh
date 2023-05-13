@@ -4,13 +4,13 @@
 
 # JAVA
 JAVA_JDK11=javajdk.pkg
-JAVA_JDK8=javajdk8.pkg
+JAVA_JDK17=javajdk17.pkg
 
 curl -o $JAVA_JDK11 -LO https://corretto.aws/downloads/latest/amazon-corretto-11-x64-macos-jdk.pkg
-curl -o $JAVA_JDK8 -LO https://corretto.aws/downloads/latest/amazon-corretto-8-x64-macos-jdk.pkg
+curl -o $JAVA_JDK17 -LO https://corretto.aws/downloads/latest/amazon-corretto-17-x64-linux-jdk.tar.gz
 sudo installer -pkg ./$JAVA_JDK11 -target /
-sudo installer -pkg ./$JAVA_JDK8 -target /
-rm $JAVA_JDK11 $JAVA_JDK8
+sudo installer -pkg ./$JAVA_JDK17 -target /
+rm $JAVA_JDK11 $JAVA_JDK17
 
 # Terminal utils
 brew install mpg123
@@ -18,10 +18,14 @@ brew install tree
 brew install ncdu
 brew install stow
 
+# fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install --all
+
 brew install jenv
 jenv enable-plugin export
-jenv add /Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home
 jenv add /Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
+jenv add /Library/Java/JavaVirtualMachines/amazon-corretto-17.jdk/Contents/Home
 
 brew install nvm
 
@@ -35,17 +39,17 @@ brew install --cask visual-studio-code
 brew install --cask fork
 
 # Vagrant
-brew install vagrant
+# brew install vagrant
 
 # VirtualBox
-brew install virtualbox
+# brew install virtualbox
 
-# OH MY ZSH
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+# Zim
+wget -nv -O - https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
 # CONFIG
 
-export _git_email=aitor.escolar@devo.com
+export _git_email=aitor.escolar@galpsolar.com
 export _git_user=aitor.escolar
 export _platform_folder=macos
 
