@@ -9,7 +9,7 @@ if ! which java > /dev/null; then
     echo ""
     wget -O- https://apt.corretto.aws/corretto.key | sudo apt-key add - 
     sudo add-apt-repository --yes 'deb https://apt.corretto.aws stable main' 1>/dev/null
-    sudo apt-get update; sudo apt-get install -y java-17-amazon-corretto-jdk
+    sudo apt-get update; sudo apt-get install -y java-21-amazon-corretto-jdk
 fi
 
 # Terminal utils
@@ -44,10 +44,9 @@ chsh -s $(which zsh) # Zim tries to update it but some distros return authentica
 
 ## CONFIG
 
-export _git_email=basch92@gmail.com
-export _git_user=aiescola
+export _git_email=aitorescolarcabeza@gmail.com
+export _git_user=aescolar
 export _platform_folder=linux
-#export _platform_folder=regolith
 
 sh ./scripts/setupGit 
 sh ./scripts/setupLinks

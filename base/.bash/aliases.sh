@@ -1,5 +1,3 @@
-#!/bin/bash
-
 alias ws="cd $HOME/workspace"
 alias wsa="cd $HOME/workspace/android"
 alias ezshrc="nano $HOME/.zshrc"
