@@ -1,9 +1,11 @@
 #!/bin/bash
 
-git config --global core.excludesfile $HOME/.gitignoreglobal
-git config --global user.email ${_git_email}
-git config --global user.name ${_git_user}
-git config --global init.defaultBranch main
-git config --global pull.rebase true
+if [ -z "$(git config --global --get user.email)" ]; then
+    read -p "Git email: " email
+    git config --global user.email "$email"
+fi
 
-git config --global alias.lg "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+if [ -z "$(git config --global --get user.name)" ]; then
+    read -p "Git user: " name
+    git config --global user.name "$name"
+fi

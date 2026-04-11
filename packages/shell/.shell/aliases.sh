@@ -1,5 +1,6 @@
 alias ws="cd $HOME/workspace"
 alias wsa="cd $HOME/workspace/android"
+alias ww="cd $HOME/workspace/work"
 alias ezshrc="nano $HOME/.zshrc"
 alias eppa="sudo nano /etc/apt/sources.list"
 
@@ -10,6 +11,8 @@ alias tarinfo='tar -ztvf $1'
 # Docker
 alias enableDocker="sudo systemctl enable docker"
 alias disableDocker="sudo systemctl disable docker"
+alias docupd="docker compose up -d"
+alias docdown="docker compose down"
 
 # Internet radio
 alias mpgcadenaser="mpg123 http://playerservices.streamtheworld.com/api/livestream-redirect/CADENASER.mp3"
